@@ -1,0 +1,153 @@
+* {
+    font-family: sans-serif;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, code {
+    color: white;
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+}
+
+.post {
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid white;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+    
+}
+
+.post:hover {
+    transform: scale(101%);
+    transition-duration: 0.4s;
+    box-shadow: 0px 14px 5px -1px rgba(255, 255, 255, 0.25);
+}
+
+.post:active {
+    background-color: rgb(38, 37, 36);
+    transition-duration: 120ms;
+}
+
+.write-post {
+    border-radius: 25px;
+    border: 2px solid white;
+    max-width: 100%;
+    width: 800px;
+    height: 150px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(22, 21, 21);
+    position: relative;
+   
+}
+
+textarea {
+    border-radius: 25px;
+    background-color: rgb(22, 21, 21);
+    height: auto;
+    width: 800px;
+    resize: none;
+    border: 1px solid rgb(22, 21, 21);
+    color:  white;
+    text-align: left;
+    margin: auto;
+    max-width: 100%;
+    width: auto;
+    padding: 20px;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.postbtn {
+    border-radius: 20px;
+    background-color: rgb(11, 146, 237);
+    border: 1px rgb(11, 146, 237);
+    width: 70px;
+    margin-right: auto;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 26px;
+}
+
+.postbtn:hover {
+    cursor: pointer;
+    background-color: rgb(5, 150, 247);
+}
+
+.postbtn:active {
+    background-color: rgb(1, 121, 201);
+}
+
+.home {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.user-media{
+    border-radius: 22px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+}
+
+.pfp {
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.text {
+    font-weight: 100;
+}
+
+
+.content {
+
+}
+
+.user1 {
+    display: flex;
+    justify-content: left;
+}
+
+.at{
+    color: gray;
+    margin: 5px;
+    font-weight: thin;
+}
+
+.hashtag {
+    color: rgb(11, 146, 237);
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gray {
+    color: rgb(94, 94, 94);
+}
