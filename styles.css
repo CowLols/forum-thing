@@ -111,6 +111,10 @@ body {
     margin: 10px;
 }
 
+.user-media:hover {
+    cursor: pointer;
+}
+
 .user-media:active {
     filter: brightness(70%);
 }
@@ -164,6 +168,11 @@ body {
 
 .hashtag:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.hashtag:active {
+    color: rgb(0, 101, 168);
     cursor: pointer;
 }
 
