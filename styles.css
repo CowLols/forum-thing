@@ -30,9 +30,8 @@ body {
 }
 
 .post:hover {
-    transform: scale(101%);
     transition-duration: 0.4s;
-    box-shadow: 0px 14px 5px -1px rgba(255, 255, 255, 0.25);
+    /*box-shadow: 0px 14px 5px -1px rgba(255, 255, 255, 0.25);*/
 }
 
 .post:active {
@@ -84,6 +83,7 @@ textarea {
     bottom: 0;
     right: 0;
     margin: 26px;
+    text-decoration: none;
 }
 
 .postbtn:hover {
@@ -110,6 +110,10 @@ textarea {
     margin: 10px;
 }
 
+.user-media:active {
+    filter: brightness(70%);
+}
+
 .pfp {
     border-radius: 50%;
     border: white 1px solid;
@@ -117,6 +121,15 @@ textarea {
     height: 50px;
     display: inline-block;
     margin: 10px;
+}
+
+.pfp:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.pfp:active {
+    filter: brightness(70%);
 }
 
 .text {
@@ -139,6 +152,11 @@ textarea {
     font-weight: thin;
 }
 
+.at:hover, .at:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .hashtag {
     color: rgb(11, 146, 237);
 }
@@ -150,4 +168,26 @@ textarea {
 
 .gray {
     color: rgb(94, 94, 94);
+}
+
+.likeicon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+.likeicon:active {
+    border: 1px solid rgba(208, 15, 15, 0.411);
+    background-color: rgb(234, 20, 20);
+    transition-duration: 150ms;
+    color: rgb(4, 4, 4);
+    
 }
