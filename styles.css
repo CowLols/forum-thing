@@ -42,12 +42,13 @@ body {
 }
 
 .post:hover {
-    transition-duration: 0.4s;
-    /*box-shadow: 0px 14px 5px -1px rgba(255, 255, 255, 0.25);*/
+    background-color: rgb(13, 13, 13);
+    transition-duration: 120ms;
 }
 
+
 .post:active {
-    background-color: rgb(38, 37, 36);
+    background-color: rgb(13, 13, 13);
     transition-duration: 120ms;
 }
 
@@ -103,11 +104,13 @@ body {
     right: 0;
     margin: 26px;
     text-decoration: none;
+    user-select: none;
 }
 
 .postbtn:hover {
     cursor: pointer;
     background-color: rgb(5, 150, 247);
+    box-shadow: 0px 2px 6px -3px rgb(11, 146, 237);
 }
 
 .postbtn:active {
@@ -133,6 +136,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     margin: 10px;
+    border: 1px solid black;
 }
 
 .user-media:hover {
@@ -141,6 +145,13 @@ body {
 
 .user-media:active {
     filter: brightness(70%);
+}
+
+.video {
+    border-radius: 22px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
 }
 
 .pfp {
@@ -180,9 +191,14 @@ body {
     font-weight: thin;
 }
 
-.at:hover, .at:active {
+.at:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.at:active {
+    color: rgb(64, 63, 63);
+    text-decoration: underline;
 }
 
 .hashtag {
@@ -203,6 +219,14 @@ body {
     color: rgb(94, 94, 94);
 }
 
+.username:hover, .username:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.username:active {
+color: rgb(198, 198, 198);
+}
 /*-------------------*\
 
         ICONS
@@ -226,10 +250,12 @@ body {
 .likeicon:active {
     border: 1px solid rgba(208, 15, 15, 0.411);
     background-color: rgba(234, 20, 20, 0.333);
-    transition-duration: 150ms;
-    color: rgb(234, 20, 20)
+    color: rgb(234, 20, 20);
+    box-shadow: 0px 0px 13px -3px rgb(234, 20, 20);
 }
 
 .likeicon:hover {
-    color: rgb(85, 81, 81)
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 13px -3px rgb(100, 10, 10);
+    background-color: rgb(100, 10, 10);
 }
