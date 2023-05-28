@@ -14,6 +14,15 @@ h1, h2, h3, h4, h5, h6, p, code {
     margin: 10px;
 }
 
+.left-bold {
+    text-align: left;
+    font-weight: 800;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
 /*-------------------*\
 
         MAIN PAGE
@@ -27,18 +36,38 @@ body {
 .main {
 }
 
-.post {
-    position: relative;
-    border-radius: 25px;
+.title-container {
+    position: sticky;
     border: 2px solid white;
     max-width: 100%;
     width: 800px;
     height: auto;
-    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 0px;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.post {
+    position: relative;
+    border: 2px solid white;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     z-index: 999;
-    
 }
 
 .post:hover {
@@ -53,21 +82,17 @@ body {
 }
 
 .write-post {
-    border-radius: 25px;
     border: 2px solid white;
     max-width: 100%;
     width: 800px;
-    height: 150px;
-    margin-bottom: 25px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(22, 21, 21);
     position: relative;
-   
 }
 
 .write {
-    border-radius: 25px;
     background-color: rgb(22, 21, 21);
     height: auto;
     width: 800px;
@@ -81,8 +106,8 @@ body {
     padding: 20px;
     outline: none;
     box-sizing: border-box;
-    overflow: hidden;
-
+    /*overflow: hidden;*/
+    position: sticky;
 }
 
 /*-------------------*\
@@ -109,7 +134,7 @@ body {
 
 .postbtn:hover {
     cursor: pointer;
-    background-color: rgb(5, 150, 247);
+    background-color: rgb(0, 139, 231);
     box-shadow: 0px 2px 6px -3px rgb(11, 146, 237);
 }
 
@@ -245,17 +270,19 @@ color: rgb(198, 198, 198);
     cursor: pointer;
     text-align: center;
     user-select: none;
-}
-
-.likeicon:active {
-    border: 1px solid rgba(208, 15, 15, 0.411);
-    background-color: rgba(234, 20, 20, 0.333);
-    color: rgb(234, 20, 20);
-    box-shadow: 0px 0px 13px -3px rgb(234, 20, 20);
+    padding: 5px;
 }
 
 .likeicon:hover {
     color: rgb(255, 0, 0);
     box-shadow: 0px 0px 13px -3px rgb(100, 10, 10);
-    background-color: rgb(100, 10, 10);
+    background-color: rgba(186, 25, 25, 0.671);
+}
+
+
+.likeicon:active {
+    border: 1px solid rgba(208, 15, 15, 0.411);
+    background-color: rgba(213, 53, 53, 0.629);
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 13px -3px rgb(234, 20, 20);
 }
