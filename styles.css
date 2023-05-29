@@ -23,6 +23,8 @@ a, a:hover, a:active {
     text-decoration: none;
 }
 
+
+
 /*-------------------*\
 
         MAIN PAGE
@@ -42,7 +44,7 @@ div {
 
 .title-container {
     position: sticky;
-    border: 2px solid white;
+
     max-width: 100%;
     width: 800px;
     height: auto;
@@ -52,6 +54,21 @@ div {
     background-color: rgba(0, 0, 0, 0.532);
     top: 0px;
     backdrop-filter: blur(5px);
+}
+
+.container-wrapper {
+    position: sticky;
+
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 0px;
+    filter: blur(90%);
+    
 }
 
 .logo {
@@ -65,7 +82,9 @@ div {
 
 .post {
     position: relative;
-    border: 2px solid white;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    border-right: 2px solid rgb(68, 68, 68);
+    border-left: 2px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     height: auto;
@@ -77,16 +96,17 @@ div {
 .post:hover {
     background-color: rgb(13, 13, 13);
     transition-duration: 120ms;
+    cursor: pointer;
 }
 
 
 .post:active {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(37, 37, 37);
     transition-duration: 120ms;
 }
 
 .write-post { /*This is the div that contains .write */
-    border: 2px solid white;
+    border: 2px solid rgb(68, 68, 68);
     max-width: 100%;
     width: 800px;
     height: 200px;
@@ -169,7 +189,6 @@ div {
 }
 
 .user-media:hover {
-    cursor: pointer;
 }
 
 .user-media:active {
@@ -184,7 +203,6 @@ div {
 }
 
 .video:hover {
-    cursor: pointer;
 }
 
 .pfp {
