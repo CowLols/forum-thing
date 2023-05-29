@@ -36,6 +36,10 @@ body {
 .main {
 }
 
+div {
+    margin: 0;
+}
+
 .title-container {
     position: sticky;
     border: 2px solid white;
@@ -81,7 +85,7 @@ body {
     transition-duration: 120ms;
 }
 
-.write-post {
+.write-post { /*This is the div that contains .write */
     border: 2px solid white;
     max-width: 100%;
     width: 800px;
