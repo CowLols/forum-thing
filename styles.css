@@ -1,6 +1,5 @@
 * {
     font-family: sans-serif;
-    height: auto;
 }
 
 /*-------------------*\
@@ -9,7 +8,7 @@
 
 \*-------------------*/
 
-h1, h2, h3, h4, h5, h6, p, code, hr, div {
+h1, h2, h3, h4, h5, h6, p, code, hr {
     color: white;
     margin: 10px;
 }
@@ -95,14 +94,14 @@ div {
 
 .post:hover {
     background-color: rgb(13, 13, 13);
-    transition-duration: 120ms;
+    transition-duration: 320ms;
     cursor: pointer;
 }
 
 
 .post:active {
     background-color: rgb(37, 37, 37);
-    transition-duration: 120ms;
+    transition-duration: 320ms;
 }
 
 .write-post { /*This is the div that contains .write */
@@ -228,7 +227,6 @@ div {
 }
 
 .content {
-
 }
 
 .user1 {
