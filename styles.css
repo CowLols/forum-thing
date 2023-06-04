@@ -266,6 +266,24 @@ div {
 
 .gray {
     color: rgb(94, 94, 94);
+    border-radius: 100%;
+    padding: 6px;
+}
+
+.gray:hover {
+    background-color: rgba(50, 189, 50, 0.575);
+    border: 1px solid rgba(50, 189, 50, 0.575);
+    border-radius: 100%;
+    padding: 6px;
+    transition-duration: 0.2s;
+    color: chartreuse;
+    
+}
+
+.gray:active {
+    background-color: rgba(48, 113, 48, 0.575);
+    border: 1px solid rgba(48, 113, 48, 0.575);
+    color: green;
 }
 
 .username:hover, .username:active {
