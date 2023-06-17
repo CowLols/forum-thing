@@ -22,7 +22,33 @@ a, a:hover, a:active {
     text-decoration: none;
 }
 
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
 
+.link {
+    padding: 2px;
+    color: rgb(15, 119, 238);
+    text-decoration: none;
+}
+
+.link:hover {
+    transition-duration: 300ms;
+    background-color: rgba(98, 98, 98, 0.645);  
+}
+
+.link:active {
+    background-color: rgba(98, 98, 98, 0.734);
+    transition-duration: 0.2s;
+    border-radius: 2px;
+}
+
+.link:visited {
+    color: rgb(15, 119, 238);
+}
 
 /*-------------------*\
 
@@ -322,6 +348,8 @@ div {
 .hashtag:hover {
     text-decoration: underline;
     cursor: pointer;
+    transition-duration: 300ms;
+    background-color: rgba(98, 98, 98, 0.373);
 }
 
 .hashtag:active {
